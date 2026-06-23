@@ -2,16 +2,19 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('navigation');
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/works', label: 'Works' },
-    { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: t('home') },
+    { href: '/about', label: t('about') },
+    { href: '/works', label: t('works') },
+    { href: '/services', label: t('services') },
+    { href: '/contact', label: t('contact') },
   ];
 
   return (
@@ -23,7 +26,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -33,16 +36,20 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <LanguageSwitcher />
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
+        {/* Mobile Menu Button & Language Switcher */}
+        <div className="md:hidden flex items-center gap-4">
+          <LanguageSwitcher />
+          <button
+            className="text-2xl"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Navigation */}

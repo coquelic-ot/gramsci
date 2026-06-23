@@ -1,0 +1,54 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "について",
+    "works": "作品",
+    "services": "サービス",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "hero_title": "クリエイティブデザインソリューション",
+    "hero_subtitle": "先進的なブランドのための戦略的かつ創造的なデザイン",
+    "cta_button": "ポートフォリオを見る"
+  },
+  "about": {
+    "title": "gramsciについて",
+    "intro": "私たちは、革新を促進し、行動にインスピレーションを与える意味のある視覚体験の創造に専念するデザインスタジオです。",
+    "mission": "私たちの使命は、戦略的思考と創造的卓越性を組み合わせることで、先進的なブランドが目立つことを支援することです。",
+    "values_title": "私たちの価値観",
+    "team_title": "コアチーム"
+  },
+  "works": {
+    "title": "作品",
+    "all_projects": "すべてのプロジェクト",
+    "filter_label": "カテゴリー",
+    "no_results": "プロジェクトが見つかりません"
+  },
+  "services": {
+    "title": "サービス",
+    "intro": "お客様のニーズに合わせた包括的なデザインサービスを提供しています。",
+    "brand_strategy": "ブランド戦略・デザイン",
+    "web_digital": "Web・デジタルデザイン",
+    "product_packaging": "プロダクト・パッケージング",
+    "editorial_print": "編集・印刷",
+    "campaigns": "キャンペーン・マーケティング",
+    "spatial": "空間デザイン"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "intro": "プロジェクトのご相談がありましたら、ぜひお聞かせください。一緒に素晴らしいものを創造しましょう。",
+    "form_title": "メッセージを送信",
+    "form_name": "名前",
+    "form_email": "メールアドレス",
+    "form_subject": "件名",
+    "form_message": "メッセージ",
+    "form_button": "送信",
+    "form_success": "ありがとうございます。担当者からご連絡させていただきます。"
+  },
+  "footer": {
+    "links": "クイックリンク",
+    "contact_section": "お問い合わせ",
+    "follow_us": "フォロー",
+    "copyright": "© 2002-2024 gramsci. すべての権利を保有します。"
+  }
+}

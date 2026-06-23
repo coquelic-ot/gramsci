@@ -1,0 +1,54 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Creative Design Solutions",
+    "hero_subtitle": "Strategic and creative design for forward-thinking brands",
+    "cta_button": "View Portfolio"
+  },
+  "about": {
+    "title": "About gramsci",
+    "intro": "We are a design studio dedicated to creating meaningful visual experiences that drive innovation and inspire action.",
+    "mission": "Our mission is to help forward-thinking brands stand out by combining strategic thinking with creative excellence.",
+    "values_title": "Our Values",
+    "team_title": "Core Team"
+  },
+  "works": {
+    "title": "Works",
+    "all_projects": "All Projects",
+    "filter_label": "Category",
+    "no_results": "No projects found"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "We offer a comprehensive range of design services tailored to your needs.",
+    "brand_strategy": "Brand Strategy & Design",
+    "web_digital": "Web & Digital Design",
+    "product_packaging": "Product & Packaging",
+    "editorial_print": "Editorial & Print",
+    "campaigns": "Campaigns & Marketing",
+    "spatial": "Spatial Design"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "intro": "Have a project in mind? We'd love to hear from you. Let's create something extraordinary together.",
+    "form_title": "Send us a Message",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "form_button": "Send Message",
+    "form_success": "Thank you! We'll get back to you soon."
+  },
+  "footer": {
+    "links": "Quick Links",
+    "contact_section": "Contact",
+    "follow_us": "Follow Us",
+    "copyright": "© 2002-2024 gramsci. All rights reserved."
+  }
+}
