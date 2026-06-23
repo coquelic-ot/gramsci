@@ -44,25 +44,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Get in Touch</h4>
+            <h4 className="font-semibold mb-4">Contact</h4>
             <div className="text-sm space-y-2">
-              <p>
-                Email:{' '}
-                <a
-                  href="mailto:hello@gramsci.studio"
-                  className="hover:text-accent transition-colors"
-                >
-                  hello@gramsci.studio
-                </a>
-              </p>
-              <p>
-                Phone:{' '}
-                <a
-                  href="tel:+1234567890"
-                  className="hover:text-accent transition-colors"
-                >
-                  +1 (234) 567-890
-                </a>
+              <p className="text-gray-400">
+                Get in touch via the contact form or reach out through social media.
               </p>
             </div>
           </div>
@@ -70,7 +55,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-          <p>&copy; {currentYear} Gramsci Design Studio. All rights reserved.</p>
+          <p>&copy; {currentYear} Gramsci. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-accent transition-colors">
               Instagram

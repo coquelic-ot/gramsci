@@ -20,31 +20,6 @@ export default function Contact() {
 
             <div className="space-y-8">
               <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Email</p>
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="text-2xl font-semibold hover:text-accent transition-colors"
-                >
-                  {contact.email}
-                </a>
-              </div>
-
-              <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Phone</p>
-                <a
-                  href={`tel:${contact.phone.replace(/\D/g, '')}`}
-                  className="text-2xl font-semibold hover:text-accent transition-colors"
-                >
-                  {contact.phone}
-                </a>
-              </div>
-
-              <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">Address</p>
-                <p className="text-lg whitespace-pre-line">{contact.address}</p>
-              </div>
-
-              <div>
                 <p className="text-sm text-gray-500 uppercase tracking-wide mb-4">Follow Us</p>
                 <div className="flex gap-4">
                   {['Instagram', 'Dribbble', 'Twitter'].map((social) => (
