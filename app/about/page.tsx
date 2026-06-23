@@ -57,7 +57,7 @@ export default function About() {
 
             {/* Member 2 */}
             <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-2">コマツザキットム</h3>
+              <h3 className="text-2xl font-bold mb-2">コマツザキツトム</h3>
               <p className="text-blue-600 font-semibold mb-4">Creative Director / Web Director</p>
               <p className="text-gray-600 leading-relaxed">
                 Creative Director with background in search engine development and video production. Leads web-centered campaigns, content strategy, and digital advertising initiatives. Expertise in conceptualizing and executing integrated campaigns across digital and traditional media channels.
