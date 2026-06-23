@@ -8,7 +8,7 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      <Hero title="gramsciについて" subtitle="戦略的かつ創造的なデザインソリューションを創造するデザインスタジオ" compact />
+      <Hero title="gramsciについて" subtitle="イノベーションを推進し、ブランドの成長を支援するデザインスタジオ" compact />
 
       <section className="max-w-4xl mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold mb-6">Our Story</h2>

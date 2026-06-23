@@ -40,7 +40,7 @@ const services = [
 export default function Services() {
   return (
     <>
-      <Hero title="サービス" subtitle="戦略、創造性、実行にまたがる包括的なデザインサービス" compact />
+      <Hero title="サービス" subtitle="ブランディング、デジタル、空間まで。ビジネス成長を支援するデザインサービス" compact />
 
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
