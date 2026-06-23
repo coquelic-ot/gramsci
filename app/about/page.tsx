@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import { content } from '@/data/content';
 
 export const metadata = {
   title: 'About | gramsci',
@@ -19,6 +20,20 @@ export default function About() {
         <p className="text-lg text-gray-600 mb-8">
           Our mission is to help advanced brands stand out by combining strategic thinking with creative excellence. 私たちは、戦略的思考と創造的卓越性を組み合わせることで、先進的なブランドが目立つことを支援します。
         </p>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-4xl font-bold mb-12">Our Team</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {content.about.team.map((member) => (
+            <div key={member.name} className="text-center">
+              <div className="w-48 h-48 mx-auto bg-gray-200 rounded-lg mb-6"></div>
+              <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+              <p className="text-lg text-accent font-semibold mb-4">{member.role}</p>
+              <p className="text-gray-600">{member.bio}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );
