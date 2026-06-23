@@ -7,12 +7,12 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gramsci.studio'),
   title: {
-    default: 'Gramsci | Design Studio - Creative Design Solutions for Brands',
-    template: '%s | Gramsci Design Studio'
+    default: 'Gramsci | Creative Design Solutions for Brands',
+    template: '%s | Gramsci'
   },
-  description: 'Gramsci Design Studio - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.',
+  description: 'Gramsci - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.',
   keywords: [
-    'design studio',
+    'design',
     'graphic design',
     'web design',
     'branding',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Gramsci | Design Studio',
+    title: 'Gramsci',
     description: 'Creative design solutions for forward-thinking brands',
     type: 'website',
     url: 'https://gramsci.studio',
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Gramsci Design Studio',
+        alt: 'Gramsci',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gramsci | Design Studio',
+    title: 'Gramsci',
     description: 'Creative design solutions for forward-thinking brands',
     images: ['/og-image.png'],
   },
@@ -107,10 +107,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Gramsci, Inc.',
+              name: 'Gramsci',
               url: 'https://gramsci.studio',
               logo: 'https://gramsci.studio/logo.png',
-              description: 'Creative design studio specializing in branding, web design, and digital communications',
+              description: 'Creative design solutions for forward-thinking brands',
               contact: {
                 '@type': 'ContactPoint',
                 contactType: 'Customer Service',
