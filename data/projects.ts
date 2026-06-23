@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     id: 'project-1',
     title: 'エビスビール',
-    category: 'Branding',
+    category: 'Web Design',
     image: '/images/portfolio/portfolio_01.jpg',
     images: ['/images/portfolio/portfolio_01.jpg'],
     description: 'Web Communication Campaign',
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     id: 'project-3',
     title: 'クラブマイクロソフト',
-    category: 'Packaging',
+    category: 'Web Design',
     image: '/images/portfolio/portfolio_03.jpg',
     images: ['/images/portfolio/portfolio_03.jpg'],
     description: 'Web Communication Campaign',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
   {
     id: 'project-5',
     title: 'アイデムキャンペーンサイト',
-    category: 'Exhibition',
+    category: 'Marketing Campaigns',
     image: '/images/portfolio/portfolio_05.jpg',
     images: ['/images/portfolio/portfolio_05.jpg'],
     description: 'Web Communication Campaign',
@@ -70,7 +70,7 @@ export const projects: Project[] = [
   {
     id: 'project-6',
     title: 'Sony WEGA-Experience Simulator',
-    category: 'Editorial',
+    category: 'Web Design',
     image: '/images/portfolio/portfolio_06.jpg',
     images: ['/images/portfolio/portfolio_06.jpg'],
     description: 'Web Communication',
@@ -81,7 +81,7 @@ export const projects: Project[] = [
   {
     id: 'project-7',
     title: '教えて！VAIO先生SONY',
-    category: 'Branding',
+    category: 'Web Design',
     image: '/images/portfolio/portfolio_07.jpg',
     images: ['/images/portfolio/portfolio_07.jpg'],
     description: 'Web Communication',
@@ -103,7 +103,7 @@ export const projects: Project[] = [
   {
     id: 'project-9',
     title: 'Mt.Rainier DOUBLE ESPRESSO',
-    category: 'Packaging',
+    category: 'Web Design',
     image: '/images/portfolio/portfolio_09.jpg',
     images: ['/images/portfolio/portfolio_09.jpg'],
     description: 'Web Communication Campaign',
@@ -147,7 +147,7 @@ export const projects: Project[] = [
   {
     id: 'project-13',
     title: 'DIATONE',
-    category: 'Branding',
+    category: 'Editorial',
     image: '/images/portfolio/portfolio_13.jpg',
     images: ['/images/portfolio/portfolio_13.jpg'],
     description: 'Product Catalog Design',
@@ -158,7 +158,7 @@ export const projects: Project[] = [
   {
     id: 'project-14',
     title: 'Design Guide & Floor MAP',
-    category: 'Web Design',
+    category: 'Environmental Design',
     image: '/images/portfolio/portfolio_14.jpg',
     images: ['/images/portfolio/portfolio_14.jpg'],
     description: 'Wayfinding & Design Documentation',
@@ -169,7 +169,7 @@ export const projects: Project[] = [
   {
     id: 'project-15',
     title: 'Etcetera / Wall Design',
-    category: 'Packaging',
+    category: 'Environmental Design',
     image: '/images/portfolio/portfolio_15.jpg',
     images: ['/images/portfolio/portfolio_15.jpg'],
     description: 'PR Materials & Environmental Design',
