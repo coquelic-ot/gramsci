@@ -1,4 +1,4 @@
-import Link from 'next-intl/link';
+import Link from 'next/link';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
 import { notFound } from 'next/navigation';
