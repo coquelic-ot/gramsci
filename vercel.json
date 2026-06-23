@@ -2,9 +2,5 @@
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "installCommand": "npm ci",
-  "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": "@next_public_site_url",
-    "NEXT_PUBLIC_GA_ID": "@next_public_ga_id"
-  }
+  "framework": "nextjs"
 }
