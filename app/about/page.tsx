@@ -13,7 +13,7 @@ export default function About() {
       <section className="max-w-4xl mx-auto px-6 py-20">
         <h2 className="text-3xl font-bold mb-6">Our Story</h2>
         <p className="text-lg text-gray-600 mb-8">
-          イノベーションを推進し、先進的なブランドに行動へのインスピレーションを与える意味のある視覚体験を創造することに専念するデザインスタジオです。
+          企業やブランドの成長に貢献する、意味のある視覚体験を創造することに専念するデザインスタジオです。
         </p>
 
         <h2 className="text-3xl font-bold mb-6 mt-12">Our Mission</h2>
