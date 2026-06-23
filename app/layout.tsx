@@ -7,10 +7,10 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gramsci.studio'),
   title: {
-    default: 'Gramsci | Creative Design Solutions for Brands',
-    template: '%s | Gramsci'
+    default: 'gramsci | Creative Design Solutions for Brands',
+    template: '%s | gramsci'
   },
-  description: 'Gramsci - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.',
+  description: 'gramsci - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.',
   keywords: [
     'design',
     'graphic design',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Gramsci',
+    title: 'gramsci',
     description: 'Creative design solutions for forward-thinking brands',
     type: 'website',
     url: 'https://gramsci.studio',
@@ -46,13 +46,13 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Gramsci',
+        alt: 'gramsci',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gramsci',
+    title: 'gramsci',
     description: 'Creative design solutions for forward-thinking brands',
     images: ['/og-image.png'],
   },
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
-  authors: [{ name: 'Gramsci, Inc.' }],
+  authors: [{ name: 'gramsci' }],
   category: 'Design & Creative',
 };
 
@@ -107,7 +107,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Gramsci',
+              name: 'gramsci',
               url: 'https://gramsci.studio',
               logo: 'https://gramsci.studio/logo.png',
               description: 'Creative design solutions for forward-thinking brands',
