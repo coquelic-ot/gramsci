@@ -15,70 +15,78 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gramsci.studio'),
-  title: {
-    default: 'gramsci | Creative Design Solutions for Brands',
-    template: '%s | gramsci'
-  },
-  description: 'gramsci - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.',
-  keywords: [
-    'design',
-    'graphic design',
-    'web design',
-    'branding',
-    'creative agency',
-    'Tokyo',
-    'UX/UI design',
-    'art direction',
-    'portfolio'
-  ],
-  robots: {
-    index: true,
-    follow: true,
-    'max-image-preview': 'large',
-    'max-snippet': -1,
-    'max-video-preview': -1,
-  },
-  openGraph: {
-    title: 'gramsci',
-    description: 'Creative design solutions for forward-thinking brands',
-    type: 'website',
-    url: 'https://gramsci.studio',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'gramsci',
-      }
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'gramsci',
-    description: 'Creative design solutions for forward-thinking brands',
-    images: ['/og-image.png'],
-  },
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
-  manifest: '/site.webmanifest',
-  authors: [{ name: 'gramsci' }],
-  category: 'Design & Creative',
-  alternates: {
-    languages: {
-      en: 'https://gramsci.studio/en',
-      ja: 'https://gramsci.studio/ja',
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const locale = params.locale;
+  const isJapanese = locale === 'ja';
+
+  const title = isJapanese
+    ? 'gramsci | クリエイティブデザインソリューション'
+    : 'gramsci | Creative Design Solutions for Brands';
+
+  const description = isJapanese
+    ? 'gramsci - 戦略的かつ創造的なデザインソリューション。ブランディング、ウェブデザイン、グラフィックデザイン、デジタルキャンペーンを専門としています。'
+    : 'gramsci - Strategic and creative design solutions. Specializing in branding, web design, graphic design, and digital campaigns.';
+
+  const ogDescription = isJapanese
+    ? 'クリエイティブなブランドのためのデザインソリューション'
+    : 'Creative design solutions for forward-thinking brands';
+
+  return {
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gramsci.studio'),
+    title: {
+      default: title,
+      template: `%s | gramsci`
     },
-  },
-};
+    description,
+    keywords: isJapanese
+      ? ['デザイン', 'グラフィックデザイン', 'ウェブデザイン', 'ブランディング', 'クリエイティブエージェンシー', '東京', 'UX/UIデザイン', 'アートディレクション', 'ポートフォリオ']
+      : ['design', 'graphic design', 'web design', 'branding', 'creative agency', 'Tokyo', 'UX/UI design', 'art direction', 'portfolio'],
+    robots: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+    openGraph: {
+      title: 'gramsci',
+      description: ogDescription,
+      type: 'website',
+      url: isJapanese ? 'https://gramsci.studio/ja' : 'https://gramsci.studio/en',
+      images: [
+        {
+          url: '/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'gramsci',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'gramsci',
+      description: ogDescription,
+      images: ['/og-image.png'],
+    },
+    icons: {
+      icon: '/favicon.ico',
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/site.webmanifest',
+    authors: [{ name: 'gramsci' }],
+    category: 'Design & Creative',
+    alternates: {
+      languages: {
+        en: 'https://gramsci.studio/en',
+        ja: 'https://gramsci.studio/ja',
+      },
+    },
+  };
+}
 
 export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Props['params'] }) {
   const locale = params.locale;
 
-  // Validate locale
   if (!locales.includes(locale as any)) {
     notFound();
   }
@@ -89,7 +97,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* Google Analytics */}
         {gaId && (
           <>
             <Script
@@ -113,7 +120,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
           </>
         )}
 
-        {/* JSON-LD Organization Schema */}
         <Script
           id="schema-organization"
           type="application/ld+json"
@@ -124,7 +130,9 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               name: 'gramsci',
               url: 'https://gramsci.studio',
               logo: 'https://gramsci.studio/logo.png',
-              description: 'Creative design solutions for forward-thinking brands',
+              description: locale === 'ja'
+                ? 'クリエイティブなブランドのためのデザインソリューション'
+                : 'Creative design solutions for forward-thinking brands',
               contact: {
                 '@type': 'ContactPoint',
                 contactType: 'Customer Service',
