@@ -4,18 +4,18 @@ export default function About() {
   return (
     <>
       <Hero
-        title="About Gramsci"
+        title="About gramsci"
         subtitle="Creative design studio based in Tokyo, Japan"
       />
 
       {/* Company Info Section */}
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-8">Gramsci, Inc.</h2>
+        <h2 className="text-4xl font-bold mb-8">gramsci, Inc.</h2>
 
         <div className="space-y-6 mb-12">
           <div>
             <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">Company Name</p>
-            <p className="text-lg font-semibold">株式会社グラムシ (Gramsci, Inc.)</p>
+            <p className="text-lg font-semibold">株式会社グラムシ (gramsci, Inc.)</p>
           </div>
 
           <div>
@@ -36,7 +36,7 @@ export default function About() {
         </div>
 
         <p className="text-gray-600 leading-relaxed mb-8">
-          Gramsci is a creative design studio specializing in comprehensive design solutions across multiple disciplines. From graphic design and art direction to web design and system engineering, our multidisciplinary team brings together diverse expertise to deliver innovative and strategic design solutions.
+          gramsci is a creative design studio specializing in comprehensive design solutions across multiple disciplines. From graphic design and art direction to web design and system engineering, our multidisciplinary team brings together diverse expertise to deliver innovative and strategic design solutions.
         </p>
       </section>
 
