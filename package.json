@@ -1,7 +1,7 @@
 {
   "name": "gramsci-portfolio",
   "version": "1.0.0",
-  "description": "Gramsci Design Studio Portfolio Website",
+  "description": "gramsci Design Studio Portfolio Website",
   "private": true,
   "scripts": {
     "dev": "next dev",
