@@ -8,22 +8,22 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      <Hero title="About gramsci" subtitle="Innovative design studio creating strategic and creative solutions" compact />
+      <Hero title="gramsciについて" subtitle="戦略的かつ創造的なデザインソリューションを創造するデザインスタジオ" compact />
 
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+        <h2 className="text-3xl font-bold mb-6">私たちのストーリー</h2>
         <p className="text-lg text-gray-600 mb-8">
-          We are a design studio committed to creating meaningful visual experiences that drive innovation and inspire action for forward-thinking brands.
+          私たちは、イノベーションを推進し、先進的なブランドに行動へのインスピレーションを与える、意味のある視覚体験の創造に専念するデザインスタジオです。
         </p>
 
-        <h2 className="text-3xl font-bold mb-6 mt-12">Our Mission</h2>
+        <h2 className="text-3xl font-bold mb-6 mt-12">私たちのミッション</h2>
         <p className="text-lg text-gray-600 mb-8">
-          Our mission is to help advanced brands stand out by combining strategic thinking with creative excellence. 私たちは、戦略的思考と創造的卓越性を組み合わせることで、先進的なブランドが目立つことを支援します。
+          戦略的思考と創造的卓越性を組み合わせることで、先進的なブランドが目立つことを支援することです。
         </p>
       </section>
 
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-12">Our Team</h2>
+        <h2 className="text-4xl font-bold mb-12">チーム</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {content.about.team.map((member) => (
             <div key={member.name} className="text-center">
