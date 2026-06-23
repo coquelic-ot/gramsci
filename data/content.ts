@@ -21,12 +21,12 @@ export const content = {
       {
         name: '田中智康',
         role: 'Art Director / Graphic Designer',
-        bio: 'Specializing in comprehensive graphic design across IT, electronics, entertainment, and fashion industries. Expertise in editorial, packaging, spatial and 3D design.',
+        bio: 'IT、エレクトロニクス、エンタメ、ファッション業界など、多種多様なグラフィックデザインを手がける。エディトリアル、パッケージ、空間、立体デザインを専門とする。',
       },
       {
         name: 'コマツザキツトム',
         role: 'Creative Director / Web Director',
-        bio: 'Expert in web-centric campaigns and cross-media promotion. Experienced in planning, direction, and production across all media platforms.',
+        bio: 'Webを中心にした各種広告、キャンペーン、コンテンツ企画制作に携わる。近年は、あらゆるメディアをクロスさせたプロモーションの企画、ディレクション、プロデュースを行う。',
       },
     ],
   },
