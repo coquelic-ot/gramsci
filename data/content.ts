@@ -1,6 +1,6 @@
 export const content = {
   about: {
-    title: 'About Gramsci',
+    title: 'About gramsci',
     intro: 'We are a design studio dedicated to creating meaningful visual experiences that drive innovation and inspire action.',
     mission: 'Our mission is to help forward-thinking brands stand out by combining strategic thinking with creative excellence.',
     values: [
