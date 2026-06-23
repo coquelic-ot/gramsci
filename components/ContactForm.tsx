@@ -37,10 +37,8 @@ export default function ContactForm() {
   return (
     <form
       ref={formRef}
-      onSubmit={handleSubmit}
-      // 本番環境では以下のように設定してください：
-      // action="https://formspree.io/f/{FORM_ID}"
-      // method="POST"
+      action="https://formspree.io/f/mkolgvyr"
+      method="POST"
       className="max-w-2xl mx-auto"
     >
       <div className="space-y-6">
