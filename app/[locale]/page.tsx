@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero';
 import ProjectCard from '@/components/ProjectCard';
-import Link from 'next/link';
+import Link from 'next-intl/link';
 import { projects } from '@/data/projects';
 import { content } from '@/data/content';
 
