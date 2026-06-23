@@ -16,20 +16,20 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (newLocale: string) => {
     let pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
-    
-    // Remove current locale prefix
-    if (locale === 'en' && pathname.startsWith('/en')) {
-      pathname = pathname.slice(3) || '/'; // Remove '/en'
-    }
-    // ja doesn't have prefix, so no removal needed
-    
-    // Add new locale prefix if switching to en
-    if (newLocale === 'en') {
-      pathname = '/en' + pathname;
-    }
-    // ja doesn't need prefix
 
-    router.push(pathname);
+    // Remove current locale prefix (both /ja and /en)
+    if (pathname.startsWith('/ja/')) {
+      pathname = pathname.slice(3); // Remove '/ja'
+    } else if (pathname.startsWith('/en/')) {
+      pathname = pathname.slice(3); // Remove '/en'
+    } else if (pathname === '/ja' || pathname === '/en') {
+      pathname = '/';
+    }
+
+    // Add new locale prefix
+    const newPath = `/${newLocale}${pathname}`;
+
+    router.push(newPath);
     setIsOpen(false);
   };
 
