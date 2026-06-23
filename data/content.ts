@@ -19,14 +19,14 @@ export const content = {
     ],
     team: [
       {
-        name: 'Team Member 1',
-        role: 'Creative Director',
-        bio: 'Passionate about design and innovation',
+        name: '田中智康',
+        role: 'Art Director / Graphic Designer',
+        bio: 'Specializing in comprehensive graphic design across IT, electronics, entertainment, and fashion industries. Expertise in editorial, packaging, spatial and 3D design.',
       },
       {
-        name: 'Team Member 2',
-        role: 'Art Director',
-        bio: 'Specialized in visual storytelling',
+        name: 'コマツザキツトム',
+        role: 'Creative Director / Web Director',
+        bio: 'Expert in web-centric campaigns and cross-media promotion. Experienced in planning, direction, and production across all media platforms.',
       },
     ],
   },
