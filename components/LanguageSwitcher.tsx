@@ -1,7 +1,7 @@
 'use client';
 
-import { useLocale, usePathname } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function LanguageSwitcher() {
@@ -16,11 +16,12 @@ export default function LanguageSwitcher() {
   ];
 
   const handleLanguageChange = (newLocale: string) => {
-    // pathname is already without locale prefix from usePathname()
-    const newPathname = pathname === '/' ? '/' : pathname;
+    // usePathname() returns path without locale prefix
+    // Build new URL with the selected locale
+    const newPath = pathname === '/' ? `/${newLocale}` : `/${newLocale}${pathname}`;
 
     // Navigate to the new locale
-    router.push(newPathname, { locale: newLocale });
+    router.push(newPath);
     setIsOpen(false);
   };
 
