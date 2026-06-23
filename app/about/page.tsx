@@ -18,7 +18,7 @@ export default function About() {
 
         <h2 className="text-3xl font-bold mb-6 mt-12">Our Mission</h2>
         <p className="text-lg text-gray-600 mb-8">
-          細やかなヒアリング、高い技術と創造性で、顧客満足の最大化を目指します。
+          細やかなヒアリングでお客様の強みを引き出し、高い技術と創造性で、顧客満足の最大化を目指します。
         </p>
       </section>
 
