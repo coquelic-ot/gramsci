@@ -1,11 +1,4 @@
 {
-  "navigation": {
-    "home": "ホーム",
-    "about": "について",
-    "works": "作品",
-    "services": "サービス",
-    "contact": "お問い合わせ"
-  },
   "home": {
     "hero_title": "クリエイティブデザインソリューション",
     "hero_subtitle": "先進的なブランドのための戦略的かつ創造的なデザイン",
