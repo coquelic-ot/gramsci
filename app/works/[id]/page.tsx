@@ -37,11 +37,11 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
         <h1 className="text-5xl font-bold mb-4">{project.title}</h1>
         <p className="text-xl text-gray-600 mb-8">{project.description}</p>
 
-        <div className="bg-gray-100 rounded-lg overflow-hidden mb-12 aspect-video relative">
+        <div className="bg-gray-50 rounded-lg overflow-hidden mb-12 relative flex justify-center border border-gray-100">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
 

@@ -1,5 +1,5 @@
 import Hero from '@/components/Hero';
-import ProjectCard from '@/components/ProjectCard';
+import FeaturedCarousel from '@/components/FeaturedCarousel';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
 import { content } from '@/data/content';
@@ -23,10 +23,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
+        <div className="mb-12">
+          <FeaturedCarousel projects={projects} />
         </div>
 
         <div className="text-center">
